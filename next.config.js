@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-
-module.exports = {
+const nextConfig = {
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -9,5 +9,8 @@ module.exports = {
         port: '',
       },
     ],
+    unoptimized: true
   },
 };
+
+module.exports = nextConfig;
