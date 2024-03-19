@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 const toEmail = process.env.MY_EMAIL;
-export async function POST(req, res) {
+export async function POST(req: { json: () => PromiseLike<{ email: any; subject: any; message: any; }> | { email: any; subject: any; message: any; }; }, res: any) {
   const { email, subject, message } = await req.json();
   console.log(email, subject, message);
   try {

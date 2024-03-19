@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react';
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active

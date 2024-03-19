@@ -1,5 +1,5 @@
+// @ts-nocheck
 'use client';
-
 import React, { useState } from 'react';
 import GitHubIcon from '../public/github-icon.svg';
 import LinkedInIcon from '../public/linkedin-icon.svg';

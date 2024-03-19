@@ -51,11 +51,6 @@ const HeroContent = () => {
             </motion.a>
           </motion.div>
         </motion.div>
-
-        {/* BUtton Container */}
-        {/* <button className="lg:flex text-xs font-bold uppercase tracking-wider button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 custom-button px-7">
-          Resume
-        </button> */}
       </div>
     </motion.div>
   );
