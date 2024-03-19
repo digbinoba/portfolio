@@ -13,6 +13,9 @@ on:
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+env:
+    RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+    MY_EMAIL: ${{ secrets.MY_EMAIL }}
 permissions:
   contents: read
   pages: write
